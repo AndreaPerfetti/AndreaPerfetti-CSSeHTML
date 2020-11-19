@@ -413,16 +413,16 @@ html {
     background-size: cover;
 }
 #about .simg1{
-    background-image: url(/images/Creativity.svg);
+    background-image: url(./images/Creativity.svg);
 }
 #about .simg2{
-    background-image: url(/images/ProblemSolving.svg);
+    background-image: url(./images/ProblemSolving.svg);
 }
 #about .simg3{
-    background-image: url(/images/TeamWorking.svg);
+    background-image: url(./images/TeamWorking.svg);
 }
 #about .simg4{
-    background-image: url(/images/Comunication.svg);
+    background-image: url(./images/Comunication.svg);
 }
 #about .simg5{
     background-image: url(/images/Adaptivity.svg);
@@ -1169,7 +1169,7 @@ button[type="submit"]:hover{
         padding-bottom:0;
     }
     #meimg{      
-        content:url("/images/me360.jpg");
+        content:url("./images/me360.jpg");
     } 
 }   
     @media only screen and (min-width:500px) and (max-width:1040px){
@@ -1209,7 +1209,7 @@ button[type="submit"]:hover{
             font-size: 1.5rem;
         }
         #meimg{      
-            content:url("/images/me250.jpg");
+            content:url("./images/me250.jpg");
         } 
         #about .titolo{
             margin-top: 50px;
