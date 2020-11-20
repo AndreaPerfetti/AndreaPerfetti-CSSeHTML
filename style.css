@@ -12,7 +12,7 @@ a{
     font-weight: bold;
 }
 html {
-	font-size: 10px;
+	font-size: 1vh;
 	font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
     display: flex;
@@ -207,7 +207,7 @@ html {
 
 #main .main{
     width: 100%;
-    max-width: 1400px;
+    max-width: 100vh;
     height: 100%;
     display: flex;
     position: absolute;
@@ -649,8 +649,8 @@ html {
 
 .box {
     position:relative;
-    width: 150px;
-    height: 150px;
+    width: 15.5vh;
+    height: 15.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -659,19 +659,19 @@ html {
 }
 .box .percent{
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 15.5vh;
+    height: 15.5vh;
 }
 .box .percent svg{
     position: relative;
     top: 7.5%;
     left: 6.5%;
-    width: 150px;
-    height: 150px;;
+    width: 15.5vh;
+    height: 15.5vh;
 }
 .box .percent svg circle{
-    width: 150px;
-    height: 150px;
+    width: 15.5vh;
+    height: 15.5vh;
     fill:none;
     stroke-width: 8;
     stroke-dasharray: 440;
@@ -1068,8 +1068,8 @@ button[type="submit"]:hover{
 }
 @media only screen and (min-width:1024px){
     #main .me{
-        zoom: 210%;;
-        top: 35%;
+        transform: scale(2);
+        top: 45%;
         left: -10%;
     }
     .box{
@@ -1097,7 +1097,8 @@ button[type="submit"]:hover{
     #header ul{
         position: initial;
         display: block;
-        height: 10vh;
+        height: fit-content;
+        min-height: 10vh;
         margin-top:2.6vh;
         background-color: transparent;
     }
