@@ -19,14 +19,22 @@ html {
     flex-direction: column;
     overflow-x: hidden;
 }
+#about,
+#portfolio .projects,
+#skills{
+    padding-bottom:10vh;
+}
+.titolo{
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
 .titolo h1{
     font-weight: 600;
     letter-spacing: 2px;
     font-size: 3.5rem;
     color: white;
     padding: 20px;
-    border-bottom: solid 2px #ff5c33;
-    text-transform: capitalize;
+    border-bottom: solid 1px #ff5c33;
 }
 .titolo p{
     font-size: 2rem;
@@ -37,7 +45,6 @@ html {
 #meimg{      
     max-width: 100%;
     max-height: 100%;
-    background-color: black;
 } 
 /* Header Start */
 
@@ -52,7 +59,8 @@ html {
 }
 #header .header{
     width: 100%;
-    height: 10vh;
+    min-height: 10vh;
+    max-height: 14vh;
     justify-content:space-between;
     display: flex;
     align-items: center;
@@ -227,13 +235,13 @@ html {
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    top:35%;
+    top:40%;
     left: 0%;
     z-index:1;
 }
 #main h1{
     color:transparent;
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 0.8px;
     font-weight: 650;
     padding-bottom: 5px;
@@ -272,7 +280,7 @@ html {
 #button a{
     color: black;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 #button:hover{
     background-color:#ff5c33 ;
@@ -347,16 +355,15 @@ html {
 #about{
     width: 100%;
     height: fit-content;
-    min-height: 101vh;
+    min-height: 100vh;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#about .titolo{
-    margin-top: 80px;
-    margin-bottom: 15px;
+#about .article .testo span{
+    color:  #ff5c33;
 }
 #about .foto{
     background-color: black;
@@ -364,7 +371,7 @@ html {
     border-radius: 5px;
     overflow: hidden;
     width: 180px;
-    height: 180px;
+    height:180px;
     margin: 20px;
 }
 #about .foto img{
@@ -385,13 +392,13 @@ html {
     align-items: center;
     flex-direction: column;
 }
-
 #about .article .testo{
     margin: 15px;
     text-align: center;
     color: black;
     font-weight: 500;
-    font-size: 1.4rem;
+}#about .article .testo p{
+    font-size: 1.7rem;
 }
 #about .softskill{
     width: 90%;
@@ -459,7 +466,7 @@ html {
     position: relative;
     margin: 0 auto;
     height: fit-content;
-    min-height: 101vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -468,8 +475,6 @@ html {
 }
 #portfolio .portfolio .titolo{
     text-align: center;
-    margin-bottom: 20px;
-    margin-top: 85px;
 }
 #portfolio .portfolio .projects{
     width: 100%;
@@ -479,7 +484,6 @@ html {
     justify-content: center;
     align-items: center;
     height: fit-content;
-    margin-bottom: 50px;
 
 }
 #portfolio .projects .project{
@@ -617,11 +621,11 @@ html {
     justify-content: space-around;
     flex-wrap: wrap;
     padding-top:5vh;
-    padding-bottom: 10vh;
-
+}
+#skills .skills .box{
+    flex-basis: 50%;
 }
 #skills  .titolo{
-    margin-top: 90px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -629,8 +633,6 @@ html {
 }
 #skills  .titolo h1{
     color: black;
-    padding-right: 40px;
-    padding-left: 40px;
 }
 .loading:after {
     content: ' .';
@@ -638,7 +640,6 @@ html {
 }
 #skills  .titolo p{
     color: black;
-    margin-bottom: 10px;
 }
 #load-button{
     padding: 10px;
@@ -659,19 +660,19 @@ html {
 
 .box {
     position: relative;;
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-bottom: 12vh;
-    padding-top:10vh;
+    padding-top:8vh;
 }
 .box .percent{
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
 }
 .box .percent svg{
     position: relative;
@@ -682,9 +683,9 @@ html {
     position:absolute;
     fill:none;
     stroke-width: 8;
-    stroke-dasharray: 360;
-    stroke-dashoffset:360;
-    transform: translate(20px,15px);
+    stroke-dasharray: 300;
+    stroke-dashoffset:300;
+    transform: translate(10px,10px);
     stroke-linecap: round;
 }
 .box .percent svg circle:nth-child(1)
@@ -694,15 +695,15 @@ html {
 }
 
 .box .percent svg circle:nth-child(2){
-    stroke-dashoffset: 360;
+    stroke-dashoffset: 300;
     stroke: #3CB371;
 }
 .box1 .percent .img{
     position: absolute;
-    top: 20%;
-    left: 30%;
+    top: 22.5%;
+    left: 23%;
     width:60px;
-    height:80px;
+    height:60px;
     background-image: url(./images/java.svg);
     background-position: center;
     background-size: cover;
@@ -710,10 +711,10 @@ html {
 }
 .box2 .percent .img{
     position: absolute;
-    top: 20%;
-    left: 30%;
+    top: 22.5%;
+    left: 23%;
     width:60px;
-    height:80px;
+    height:60px;
     background-image: url(./images/java-script.svg);
     background-position: center;
     background-size: cover;
@@ -721,10 +722,10 @@ html {
 }
 .box3 .percent .img{
     position: absolute;
-    top: 20%;
-    left: 30%;
+    top: 22.5%;
+    left: 23%;
     width:60px;
-    height:80px;
+    height:60px;
     background-image: url(./images/css-3.svg);
     background-position: center;
     background-size: cover;
@@ -732,10 +733,10 @@ html {
 }
 .box4 .percent .img{
     position: absolute;
-    top: 20%;
-    left: 30%;
+    top: 22.5%;
+    left: 23%;
     width:60px;
-    height:80px;
+    height:60px;
     background-image: url(./images/html5.svg);
     background-position: center;
     background-size: cover;
@@ -743,10 +744,10 @@ html {
 }
 .box5 .percent .img{
     position: absolute;
-    top: 20%;
-    left: 30%;
+    top: 22.5%;
+    left: 23%;
     width:60px;
-    height:80px;
+    height:60px;
     background-image: url(./images/react.svg);
     background-position: center;
     background-size: cover;
@@ -754,10 +755,10 @@ html {
 }
 .box6 .percent .img{
     position: absolute;
-    top: 20%;
-    left: 30%;
+    top: 22.5%;
+    left: 23%;
     width:60px;
-    height:80px;
+    height:60px;
     background-image: url(./images/angular.svg);
     background-position: center;
     background-size: cover;
@@ -765,10 +766,10 @@ html {
 }
 .box7 .percent .img{
     position: absolute;
-    top: 20%;
-    left: 30%;
+    top: 22.5%;
+    left: 23%;
     width:60px;
-    height:80px;
+    height:60px;
     background-image: url(./images/vuejs.svg);
     background-position: center;
     background-size: cover;
@@ -776,10 +777,10 @@ html {
 }
 .box8 .percent .img{
     position: absolute;
-    top: 20%;
-    left: 30%;
+    top: 22.5%;
+    left: 23%;
     width:60px;
-    height:80px;
+    height:60px;
     background-image: url(./images/php.svg);
     background-position: center;
     background-size: cover;
@@ -787,10 +788,10 @@ html {
 }
 .box9 .percent .img{
     position: absolute;
-    top: 20%;
-    left: 30%;
+    top: 22.5%;
+    left: 23%;
     width:60px;
-    height:80px;
+    height:60px;
     background-image: url(./images/wordpress.svg);
     background-position: center;
     background-size: cover;
@@ -798,10 +799,10 @@ html {
 }
 .box10 .percent .img{
     position: absolute;
-    top: 20%;
-    left: 30%;
+    top: 22.5%;
+    left: 23%;
     width:60px;
-    height:80px;
+    height:60px;
     background-image: url(./images/nodejs.svg);
     background-position: center;
     background-size: cover;
@@ -854,7 +855,6 @@ html {
 }
 #contactme .titolo{
     text-align: center;
-    margin-top: 90px;
 }
 .form-label input,
 .form-label textarea{
@@ -978,7 +978,7 @@ button[type="submit"]:hover{
     }
 @keyframes per85{
     0%{
-        stroke-dashoffset:360;
+        stroke-dashoffset:300;
     }
     100%{
         stroke-dashoffset:60;
@@ -986,18 +986,18 @@ button[type="submit"]:hover{
 }
 @keyframes per75{
     0%{
-        stroke-dashoffset:360;
+        stroke-dashoffset:300;
     }
     100%{
-        stroke-dashoffset:100;
+        stroke-dashoffset:80;
     }
 }
 @keyframes per10{
     0%{
-        stroke-dashoffset:360;
+        stroke-dashoffset:300;
     }
     100%{
-        stroke-dashoffset:320;
+        stroke-dashoffset:280;
     }
 }
 
@@ -1063,15 +1063,49 @@ button[type="submit"]:hover{
         transform: scale(1.3);
     }
 }
-
+@media only screen and (min-width:500px) and (max-width: 1200px){
+    #skills .skills .box{
+        flex-basis: 33%;
+    }
+}
 @media  only screen and (min-width:1200px)  {
     #main .me{
-        transform: scale(2);
         top: 45%;
         left: 10%;
     }
+    #main h1{
+        font-size: 5rem;
+    }
+    #button a{
+        font-size: 3rem;
+    }
+    #header .nome h1{
+        font-size: 3rem;
+    }
+    #header .nome h2{
+        font-size: 2.2rem;
+    }
+    #about .article{
+        width: 80%;
+        height: fit-content;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 6vh;
+    }
+    #about .foto{
+        width: 40%;
+    }
+    #about .article .testo{
+        width: 60%;
+        font-size: 2.2rem;
+    }
     .box  {
         flex-basis: 20%;
+    }
+    .titolo{
+        margin-top: 11vh;
     }
     .titolo h1{
         font-size: 5rem;
@@ -1079,18 +1113,12 @@ button[type="submit"]:hover{
     .titolo p{
         font-size: 2.2rem;
     }
-    .titolo{
-        padding-top:4vh;
-        padding-bottom: 6vh;
-    }
     #load-button{
-        margin-top:6vh;
-        margin-bottom: 0;
         font-size: 2.2rem;
+        margin-top:3vh;
     }
-
-    #contactme .titolo{
-        padding-bottom: 2.6vh;
+    #skills .skills .box{
+        flex-basis: 20%;
     }
     #header .nav .hamburger{
         display: none;
@@ -1099,7 +1127,8 @@ button[type="submit"]:hover{
         position: initial;
         display: block;
         height: fit-content;
-        min-height: 10vh;
+        min-height:8vh;
+        max-height: 10vh;
         margin-top:2.6vh;
         background-color: transparent;
     }
@@ -1109,7 +1138,7 @@ button[type="submit"]:hover{
         display: inline-block;
     }
     #header .nav ul li a{
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
     #header ul a:after{
        display: none;
@@ -1120,7 +1149,7 @@ button[type="submit"]:hover{
     }
     #portfolio .portfolio .projects{
         flex-wrap: wrap;
-        margin-bottom:25.6vh;
+        margin-bottom:7vh;
     }
     #portfolio .projects .project{
         width: 37vh;
@@ -1156,18 +1185,6 @@ button[type="submit"]:hover{
         height:37.1vh;
         width:37.1vh;
     }
-    #about .article{
-        width: 60%;
-    }
-    #about .article .testo{
-        font-size: 2.3rem;
-        margin-top:1.2vh;
-        margin-bottom:3.6vh;
-    }
-    #about .titolo{
-        margin-bottom: 1vh;
-        padding-bottom: 0%;
-    }
     #contactme-container form{
         width: 40vh;
     }
@@ -1185,48 +1202,13 @@ button[type="submit"]:hover{
     #footer{
         margin-top:3vh;
     }
-}   
-    @media only screen and (min-width:500px) and (max-width:1200px){
-        #main .me{
-            transform: scale(1.7);
-            top: 45%;
-            left: -10%;
-        }
-        #portfolio .projects .project{
-            margin: 1vh;
-        }
-        #portfolio .portfolio .projects{
-            margin-bottom:12vh;
-        }
-        #contactme .titolo{
-            margin-top: 3vh;
-            margin-bottom: 6vh;
-        }
-        #footer .footer p{
-            margin-top:6vh;
-        }
-        #skills .skills{
-            margin-top:5vh;
-        }
-        #contactme .titolo{
-            margin-top:11vh;
-        }
-        #about .article .foto{
-            height:30vh;
-            width: 25vh;
-        }
-        #about .article .testo{
-            font-size: 1.6rem;
-        }
-        #about .titolo{
-            margin-top: 50px;
-        }
+}     
 @media only screen and (-moz-min-device-pixel-ratio: 2), 
        only screen and (-o-min-device-pixel-ratio: 2/1), 
        only screen and (-webkit-min-device-pixel-ratio: 2), 
        only screen and (min-device-pixel-ratio: 2) {
         #main .me{
-            transform: scale(2);
+            transform: scale(1.7);
             top: 45%;
             left: 0%;
         }
@@ -1234,18 +1216,9 @@ button[type="submit"]:hover{
             zoom: 1.1;
             flex-basis: 20%;
         }
-        .titolo{
-            padding-top:4vh;
-            padding-bottom: 6vh;
-        }
         #load-button{
-            margin-top:6vh;
             margin-bottom: 0;
             font-size: 2.2rem;
-        }
-    
-        #contactme .titolo{
-            padding-bottom: 2.6vh;
         }
         #header .nome{
             padding-top: 1.55vh;
@@ -1253,7 +1226,6 @@ button[type="submit"]:hover{
         }
         #portfolio .portfolio .projects{
             flex-wrap: wrap;
-            margin-bottom:25.6vh;
         }
         #portfolio .projects .project{
             width: 37vh;
@@ -1297,10 +1269,7 @@ button[type="submit"]:hover{
             margin-top:1.2vh;
             margin-bottom:3.6vh;
         }
-        #about .titolo{
-            margin-bottom: 1vh;
-            padding-bottom: 0%;
-        }
+
         #contactme-container form{
             width: 40vh;
         }
@@ -1317,6 +1286,5 @@ button[type="submit"]:hover{
         }
         #footer{
             margin-top:3vh;
-        }
-        }   
+        }  
 }
