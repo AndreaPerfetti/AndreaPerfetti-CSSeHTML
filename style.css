@@ -1071,8 +1071,13 @@ button[type="submit"]:hover{
         left: 10%;
     }
     .box  {
-        zoom: 1.15;
         flex-basis: 20%;
+    }
+    .titolo h1{
+        font-size: 5rem;
+    }
+    .titolo p{
+        font-size: 2.2rem;
     }
     .titolo{
         padding-top:4vh;
@@ -1104,7 +1109,7 @@ button[type="submit"]:hover{
         display: inline-block;
     }
     #header .nav ul li a{
-        font-size: 1.4rem;
+        font-size: 1.7rem;
     }
     #header ul a:after{
        display: none;
@@ -1155,7 +1160,7 @@ button[type="submit"]:hover{
         width: 60%;
     }
     #about .article .testo{
-        font-size: 2rem;
+        font-size: 2.3rem;
         margin-top:1.2vh;
         margin-bottom:3.6vh;
     }
@@ -1172,10 +1177,10 @@ button[type="submit"]:hover{
     }
     button[type="submit"]{
         height: 4vh;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .form-label label{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     #footer{
         margin-top:3vh;
