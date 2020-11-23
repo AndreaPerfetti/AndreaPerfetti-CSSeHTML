@@ -625,6 +625,7 @@ html {
     padding-top:5vh;
 }
 #skills .skills .box{
+    margin-bottom: 5vh;
     flex-basis: 50%;
 }
 #skills  .titolo{
@@ -1079,7 +1080,7 @@ button[type="submit"]:hover{
         font-size: 7vh;
     }
     #button a{
-        font-size: 3vh;
+        font-size: 2.5vh;
     }
     #header .nome h1{
         font-size: 3vh;
@@ -1190,7 +1191,7 @@ button[type="submit"]:hover{
         width:37.1vh;
     }
     #contactme-container form{
-        width: 35vh;
+        width: 22vw;
     }
     .form-label input,
     .form-label textarea{
@@ -1219,7 +1220,7 @@ button[type="submit"]:hover{
             font-size: 5vh;
         }
         #button a{
-            font-size: 1.5vh;
+            font-size: 10vh;
         }
         #header .nome h1{
             font-size: 3vh;
